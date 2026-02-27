@@ -1,0 +1,42 @@
+<div class="bg">
+    <div class="contact">
+    <h1>Yhteystietomme</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="images/seppä.jpg" class="card image"/>
+                <h2>Jari Vasara</h2>
+                <p>Toimitusjohtaja</p>
+                <p>Puh: +3580404040</p>
+                <p>Sähköposti: j.vasara@karkipuukot.fi</p>
+            </div>
+            <div class="card">
+                <img src="images/seppä.jpg" class="card image"/>
+                <h2>Kari Vasara</h2>
+                <p>Työnjohtaja</p>
+                <p>Puh: +3580404041</p>
+                <p>Sähköposti: k.vasara@karkipuukot.fi</p>
+            </div>
+        </div>
+        <br>
+        
+    <form class="form">
+        <h2>Täytä lomake ja ota yhteyttä meihin</h2>
+        <label for="name">Nimi:</label>
+        <input id="name" type="text">
+        <label for="email">Sähköposti:</label>
+        <input id="email" type="email">
+        <label for="puhelin">Puhelin:</label>
+        <input id="puhelin" type="text">
+        <label for="select">Oletko asiakas, yhteistyökumppani tai jotain muuta:</label>
+        <select id="user-type" required>
+            <option value="" disabled selected>-- Valitse --</option>
+            <option value="asiakas">Asiakas</option>
+            <option value="yhteistyokumppani">Yhteistyökumppani</option>
+            <option value="muu">Jokin muu</option>
+        </select>
+        <label for="viesti">Viesti</label>
+        <textarea name="viesti"></textarea>
+        <input type="button" id="laheta" value="Lähetä">
+    </form>
+    </div>
+</div>

@@ -1,0 +1,274 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer{
+    margin-top: 20px ;
+}
+
+nav{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+nav a {
+    
+    flex: 1 1 auto;
+    text-align: center;
+    white-space: nowrap;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    max-width: 200px;
+    border-left: 1px solid rgba(8, 8, 8, 0.5);
+    border-right: 1px solid rgba(8, 8, 8, 0.5);
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    background-color: white;
+}
+
+
+main{
+    margin-top: 30px;
+}
+.bg {
+    background-color: rgb(255 255 255 / 80%);
+    text-align: center;
+    align-items: center;
+    margin-left: 25vh;
+    margin-right: 25vh;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.homesegment {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.homesegment img {
+    max-width: 60vh;
+    width: 45%;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-bottom: auto;
+}
+
+.homesegment .text {
+    padding: 10px;
+    width: 50%;
+    text-align: justify;
+    background-color: white;
+    box-shadow: gray 0px 0px 2px;
+    border-radius: 3px;
+}
+
+.aktiivinen{
+    color: blue;
+}
+
+.form {
+    max-width: 80%;
+    margin: 20px auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    box-shadow: gray 0px 0px 2px;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px 0;
+}
+
+.form label {
+    justify-self: start;
+    font-weight: bold;
+}
+
+.form input,
+.form select,
+.form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30%;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+    box-shadow: gray 0px 0px 2px;
+    border-radius: 3px;
+}
+
+.card.image{
+    max-width: 200px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: none;
+}
+
+.info{
+    margin: auto;
+    margin-top: 20px;
+    max-width: 60%;
+    justify-content: center;
+    background-color: white;
+    box-shadow: gray 0px 0px 2px;
+    border-radius: 3px;
+    padding: 20px;
+}
+.info p{
+    text-align: justify;
+}
+.info h2{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.infoimage{
+    max-width: 100%;
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tuotteet{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.tuotteet .tuotecard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    box-shadow: gray 0px 0px 2px;
+    border-radius: 3px;
+}
+
+.tuotekuva{
+    max-width: 200px;
+    border-radius: 3px;
+}
+
+.tuotekuva:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.tuotteet .tuotecard:nth-child(3):nth-last-child(1) {
+    justify-self: start;
+}
+
+.tuotecard h3{
+    text-decoration: underline;
+}
+
+.tuotecard h3:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.tuotesivu{
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: gray 0px 0px 2px;
+    border-radius: 3px;
+}
+
+.tuotesivu p{
+    text-align: justify;
+    max-width: 80%;
+    margin: auto;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.tuotesivu h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tuotesivu img{
+    max-width: 90%;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+    .bg{
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+    .homesegment {
+        flex-direction: column;
+    }
+
+    .homesegment img,
+    .homesegment .text {
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 800px) {
+    .tuotteet .tuotecard {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .tuotteet .tuotecard {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
